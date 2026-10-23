@@ -1,0 +1,32 @@
+appId: ru.starveil.game
+productName: Starveil
+copyright: Starveil
+directories:
+  output: release
+  buildResources: desktop
+files:
+  - desktop/main.cjs
+  - desktop/server.cjs
+  - desktop/icon.ico
+  - package.json
+extraResources:
+  - from: .output
+    to: app-output
+    filter:
+      - "**/*"
+      - "!**/*.map"
+asar: true
+win:
+  icon: desktop/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  artifactName: Starveil-Setup-${version}.${ext}
+portable:
+  artifactName: Starveil-Portable-${version}.${ext}

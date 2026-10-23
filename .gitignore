@@ -1,0 +1,22 @@
+node_modules/
+.output/
+.vinxi/
+.tanstack/
+.vercel/
+dist/
+release/
+android/
+www/
+.env
+.env.local
+# озвучка не входит в репозиторий игры — её выкладывают на хостинг (см. README.md)
+voice-packs/
+*.keystore
+*.jks
+artifacts/
+attachments/
+screenshots/
+.grok/
+*.log
+.DS_Store
+Thumbs.db

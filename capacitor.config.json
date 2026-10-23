@@ -1,0 +1,17 @@
+{
+  "appId": "ru.starveil.game",
+  "appName": "Starveil",
+  "webDir": "www",
+  "backgroundColor": "#07080f",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}
